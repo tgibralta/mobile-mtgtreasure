@@ -1,10 +1,10 @@
 {
-  "name": "mtgtreasure",
+  "name": "mtg-treasure-app",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.14.0",
     "jest-expo": "~27.0.0",
+    "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -19,8 +19,13 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "babel-preset-expo": "^4.0.0",
     "expo": "^27.0.1",
-    "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "metro-react-native-babel-preset": "^0.45.5",
+    "react": "^16.5.2",
+    "react-fontawesome": "^1.6.1",
+    "react-native": "^0.57.0",
+    "react-native-fontawesome": "^5.7.0",
+    "react-navigation": "^2.16.0"
   }
 }

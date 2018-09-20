@@ -1,23 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from 'react-navigation';
+import Landing from './screens/Landing'
+import Home from './screens/Home'
+import Signin from './screens/Signin'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+export default createStackNavigator ({
+  Landing: {
+    screen: Landing
   },
-});
+  Home: {
+    screen: Home
+  },
+  Signin: {
+    screen: Signin
+  }
+})
+
+
+
+// https://colorhunt.co/palette/124180
